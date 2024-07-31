@@ -1,0 +1,44 @@
+.faq .container{
+    @include md{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        
+    }
+}
+
+.faq-content {
+    width: 67%;
+    @include md-l{
+        width: 100%;
+        padding: 0 36px;
+        h2{
+            color: black;
+            text-align: left;
+            padding-left: 16px;
+            border-left: 8px solid #9F1213;
+            @include md{
+                font-size: 24px;   
+            }
+        }        
+        h4{
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 32px;
+            @include md{
+                margin-top: 24px;
+            }
+        }        
+        h5{
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 24px;
+        }        
+        p{
+            font-size: 16px;
+            margin-top: 8px;
+        }
+    }
+}
+
+
+
