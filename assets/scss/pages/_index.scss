@@ -1,0 +1,245 @@
+//bannner
+
+.banner{
+	background-image: url(../images/home-header.png);
+	background-size: cover;
+  height: calc(100vh - 80px);
+  @include md-l{
+      background-image: url(../images/home-header-sm.png);
+      background-size: cover;
+      height: calc(100vh - 80px);
+  }
+  &-text{
+    height: 100%;
+    font-size: 36px;
+    color: #650300;
+    text-align: right;
+    flex-direction: column-reverse;
+    h1{
+      font-size: 64px;
+      color: #650300;
+      font-weight: 700;
+      @include md{
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+    @include md{
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+}
+
+.banner-text a{
+	background-color: #AA0601;
+	color: white;
+	font-size: 20px;
+	padding: 6px 12px;
+  &:hover{
+    background-color: #650300
+  }
+}
+
+
+//service
+
+.service{
+	background-color: #FBF2F2;
+	.container{
+		@include sm{
+			padding: 40px 0;
+		}
+	}	
+}
+
+.service-card li{
+	width: calc(25% - 18px);
+	text-align: center;
+	@include md-l{
+		width: calc(50% - 12px);
+	}
+	@include sm{
+		width: 100%;
+	}
+	p:nth-of-type(1){
+		font-size: 24px;
+		color: #650300;
+		font-weight: 600;
+	}
+	p:nth-of-type(2){
+		color: #000;
+		text-align: left;
+	}
+}
+
+//class
+
+.class-card li{
+	margin-top: 48px;
+	width: calc(33% - 24px);
+	@include md-l{
+		width: 51%;
+		margin: 24px auto 0 auto; 
+	}
+	@include sm{
+		width: 100%;
+	}
+	h2{
+		@include sm{
+			margin-bottom: 24px;
+		}
+	}
+}
+
+@media (max-width: 576px){
+	.class .container{
+	   padding: 40px 0;
+	}
+}
+
+//design
+
+.design{
+	background-image: url(../images/index-bg.png);
+	background-size: cover;
+	background-position: center;
+	.container{
+	padding: 40px 0;
+	}
+	&-content{
+		h2{
+			color: white;
+			@include md-l{
+				margin-bottom: 24px;
+			}
+		}
+	}
+}
+
+
+.design-card{
+	@include md-l{
+		flex-wrap: wrap;
+	}
+	li{
+		margin: 48px 0;
+		@include md-l{
+			max-width: 100%;
+			margin-top: 24px;
+			margin-bottom: 0;
+		}
+		.h3{
+			background: white;
+			padding: 8px 0;
+		}
+    }
+}
+
+//customer
+
+.customer-content h2{
+	margin-bottom: 48px;
+	@include md-l{
+		margin-bottom: 24px;
+	}
+	@include sm{
+		margin-bottom: 8px;
+	}
+}
+
+.customer-card li{
+	width: calc(25% - 24px);
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+	@include md-l{
+		width: calc(50% - 12px);
+	    margin-top: 24px;
+	}	
+	@include sm{
+		width: 100%;
+	    margin-top: 16px;
+	}
+}
+
+.customer-text{
+	height: 173px;
+	padding: 16px;
+	.customer-comment p:nth-of-type(1){	
+		font-weight: 500;
+		margin-bottom: 8px;
+	}
+	.date{
+		font-size: 14px;
+		color: #707070;
+	}
+}
+
+//contact-us
+
+.contact-us{
+	background-color: #FBF2F2;
+	@include md{
+		padding: 40px 0;
+	}
+
+}
+
+.contact{
+	width: 50%;
+	@include md-l{
+		width: 80%;
+	}
+	@include md{
+		width: 100%;
+	}
+	h2{
+		margin-bottom: 48px;
+		@include md-l{
+			margin-bottom: 24px;
+		}
+	}
+	p{
+		font-size: 20px;
+	}
+	&-info{
+		margin-top: 24px;
+		margin-bottom: 16px;
+		input, textarea{
+			width: 100%;
+			margin-top: 8px;
+			margin-bottom: 16px;
+			border: solid #000 1px;
+			height: 36px;
+			background: #fbf2f2;
+		}
+	}
+}
+
+
+.button{
+	margin-top: 48px;
+	text-align: center;
+	@include md{
+		margin-top: 24px;
+	}
+	a{
+		color: white;
+		padding: 16px 176px;
+		background-color: #AA0601;
+		@include md{
+			padding: 16px 142px;
+		}
+		&:hover{
+			background-color: #650300
+		}
+	}
+}
+
+.comment-box{
+	height: 136px;
+	resize: none;
+}

@@ -1,0 +1,90 @@
+.footer{
+	background: #AA0601;
+	padding-top: 48px;
+	color: white;
+	@include md{
+		padding-top: 24px;
+	}
+	&-right{
+		padding: 32px 0;
+	    border-top: 1px solid white;
+		a{
+			margin-left: 48px;
+	        font-size: 14px;
+			@include md{
+				font-size: 16px;
+		        margin-left: 0px;
+		        text-align: right;
+			}
+		}
+		@include md{
+			display: flex;
+		    flex-direction: column;
+		    align-items: flex-start;
+		    padding: 24px 0;
+		}
+		&-info{
+			@include md{
+				display: flex;
+		        flex-direction: column;
+		        align-items: flex-start;
+			}
+		}
+	}
+}
+
+.footer-nav{
+    @include md{
+		display: none;
+	}
+    li{
+	   margin-right: 48px;
+	   list-style:none;
+	   @include md-l{
+		margin-right: 16px;
+	   }
+	}
+}
+
+
+.footer-contact{
+	margin-top: 24px;
+	margin-bottom: 32px;
+	@include md{
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+	}
+	&-img{
+		width: 36px;
+		@include md {
+			width: 24px;
+		}
+	}
+	p{
+		margin-left: 22px;
+		font-size: 36px;
+		@include md{
+			margin-left: 11px;
+		    font-size: 24px;
+		}
+	}
+}
+
+
+.footer-icon li{
+	width: 48px;
+	list-style: none;
+	margin-right: 32px;
+	@include md{
+		width: 24px;
+		margin-right: 8px;
+	}
+	
+}
+
+.footer a:hover{
+	color: #000;
+	cursor: pointer;
+}
+
