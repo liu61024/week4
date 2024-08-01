@@ -1,0 +1,65 @@
+.store-taipei{
+    gap: 24px;
+    img{
+        height: 100%;
+        max-width: 100%; 
+    }
+    @include md-l{
+        flex-direction: column;
+    }
+    h2{
+        color: #000;
+        text-align: left;
+        padding-left: 16px;
+        border-left: 8px solid #9F1213;
+        margin-top: 16px;
+        @include md{
+          font-size: 24px;   
+        }
+    }
+}
+
+
+.store-option {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    label{
+        font-size: 24px;
+    }
+    select{
+        font-size:  18px;
+    }
+}
+
+.store-taipei-name p{
+    font-size: 24px;
+        padding: 8px 0 8px 24px;
+        border: 1px solid #00000020;
+}
+
+.store-taipei-info{
+    border: 1px solid #00000020;
+    li:nth-of-type(1),  li:nth-of-type(2){
+        margin-bottom: 8px;
+    }
+    padding: 16px 24px;
+    span{
+        width: 24px;
+    }
+    p{
+        font-style: 20px;
+    }
+}
+
+.store-taipei-content{
+    height: 100%;
+    @include md-l{
+        flex-direction: row; 
+        gap: 24px; 
+    }
+    @include md{
+        flex-direction: column;
+        gap: 0; 
+    }
+}
+

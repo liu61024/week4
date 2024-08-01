@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>台北門市據點</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+  </head>
+  <body>
+
+    <%- include('./layout/header'); -%>
+
+    <div class="store">
+        <div class="container container-md-fluid container-sm-fluid p-80">
+          <h2>門市據點</h2>
+          <div class="store-option">
+            <label for="store">選擇地區</label>
+            <select name="store" id="store">
+                <option value="taipei-zhongshan" selected>台北中山旗艦店</option>
+                <option value="taipei-ecogarden">台北綠園店</option>
+                <option value="taichung-qingshui">台中清水旗艦店</option>
+                <option value="kaohsiung-zhongzheng">高雄中正形象店</option>
+                <option value="Kaohsiung-dreammall">高雄夢時代店</option>
+            </select>  
+          </div> 
+          <div class="store-taipei d-flex justify-content-s-b">
+              <div class="store-taipei-content d-flex flex-direction-c">
+                  <div class="store-taipei-position">
+                    <img src="../assets/images/store-1.png" alt="taipei-zhongshan">
+                  </div>
+                  <div class="store-taipei-text">
+                      <div class="store-taipei-name">
+                          <p>台北中山旗艦店</p>
+                      </div>
+                      <div class="store-taipei-info">
+                        <ul>
+                          <li class="d-flex">
+                            <span class="material-symbols-outlined">call</span>
+                            <p>電話：(02)000-1234</p>
+                          </li>
+                          <li class="d-flex">
+                            <span class="material-symbols-outlined">schedule</span>
+                            <p>營業時間：10:00-21:00</p>
+                          </li>
+                          <li class="d-flex">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <p>地址：台北市中山區南京東路25巷2-1號</p>
+                          </li>
+                        </ul>
+                      </div>                               
+                  </div>
+                </div>
+               <div class="store-taipei-map">
+                  <img src="../assets/images/store-map2.png" alt="">     
+              </div>
+          </div>
+      </div>
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
